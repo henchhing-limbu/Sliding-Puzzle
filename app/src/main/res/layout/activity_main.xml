@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sliding numbers"
+        android:fontFamily="casual"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toTopOf="@id/grid_layout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridLayout
+        android:id="@+id/grid_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="3"
+        android:columnCount="3"
+        app:layout_constraintTop_toBottomOf="@id/text_title"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <ImageView
+            android:id="@+id/one"
+            android:layout_row="0"
+            android:layout_column="1"
+            />
+
+        <ImageView
+            android:id="@+id/two"
+            android:layout_row="0"
+            android:layout_column="2"
+            />
+
+        <ImageView
+            android:id="@+id/three"
+            android:layout_row="1"
+            android:layout_column="0"
+            />
+
+        <ImageView
+            android:id="@+id/four"
+            android:layout_row="1"
+            android:layout_column="1"
+            />
+
+        <ImageView
+            android:id="@+id/five"
+            android:layout_row="1"
+            android:layout_column="2"
+            />
+
+        <ImageView
+            android:id="@+id/six"
+            android:layout_row="2"
+            android:layout_column="0"
+            />
+
+        <ImageView
+            android:id="@+id/seven"
+            android:layout_row="2"
+            android:layout_column="1"
+            />
+
+        <ImageView
+            android:id="@+id/eight"
+            android:layout_row="2"
+            android:layout_column="2"
+            />
+
+        <ImageView
+            android:id="@+id/zero"
+            android:layout_row="0"
+            android:layout_column="0"
+            />
+
+    </GridLayout>
+
+</android.support.constraint.ConstraintLayout>
